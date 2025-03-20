@@ -74,7 +74,7 @@ nav a{
     border-radius:100% 50% !important;
     width:55% !important;
     height:100% !important;
-    background-color:#91b219 !important;
+    background-color:white !important;
     transform:translate(85%, 60%) !important;
 }
 
@@ -85,7 +85,7 @@ nav a{
     border-radius:100% 50% !important;
     width:55% !important;
     height:100% !important;
-    background-color:white!important;
+    background-color:#91b219!important;
     transform:translate(-4%,40%) !important
 }
 
