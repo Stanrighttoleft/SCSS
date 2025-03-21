@@ -92,16 +92,18 @@ nav{
 
 
 }
+
 #support{
     display:flex;
     flex-direction:row;
     
 }
+/*adjust the position of the logo*/
 .logo{
     margin-top: 10px;
 
 }
-
+/*adjust the position of the ul*/
 ul {
     display:flex;
     flex-direction:row;
@@ -113,6 +115,7 @@ ul {
     margin: 0;
     margin-top:20px;
 }
+/*take out the uderscore of navbar*/
 ul a{
     text-decoration: none;
 }
@@ -120,7 +123,7 @@ ul li {
     position: relative;
     padding-left: 15px; /* Add space to prevent overlap */
 }
-
+/*put short bar in front of list*/
 ul li::before {
     content: "|"; 
     color: white; 
@@ -132,27 +135,15 @@ ul li::before {
     transform: translateX(50%) translateY(-50%) ;
 }
 
-
-
-#navbarSupportedContent{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:18px;
-    display:flex;
-    flex-direction:row;
-
-
-}
+/* fix on top nav bar*/
 nav {
     position: fixed; 
     top: 0; 
     left: 0;
     width: 100%; 
-    z-index: 1000;
-    
-    
+    z-index: 1000;  
 }
-
-
+/* the style for the navbar list*/
 nav a{
     font-weight:400 !important;
     font-size:18px !important;
@@ -162,9 +153,13 @@ nav a{
     font-family:"Noto Sans TC", Helvetica, Arial, "微軟正黑體", Heiti TC, "メイリオ", sans-serif !important;
 
 }
+
+/*dripping bottom effect*/
 .dropdown {
     position: relative;
 }
+
+
 .dropdown::after {
     content: "";
     display: block;
