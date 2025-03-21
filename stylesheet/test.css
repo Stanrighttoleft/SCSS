@@ -1,0 +1,27 @@
+html, body {
+    text-align: center;
+    font-family: 'open sans';
+  }
+  a.btn {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 60px;
+    min-width: 306px;
+    line-height: 80px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0;
+    transition: all ease-in-out 0.5s 0s;
+    border: 2px solid transparent;
+    color: #000;
+    background: #fda800;
+    text-decoration: none;
+  }
+  .paint {
+    position: relative;
+      display: inline-block;
+      top: 98px;
+      left: 30px;
+  }

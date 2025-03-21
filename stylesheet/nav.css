@@ -88,4 +88,16 @@ nav a{
     background-color:#91b219!important;
     transform:translate(-4%,40%) !important
 }
+header::after{
+    content:"" !important;
+    position:absolute !important;
+    left:0 !important;
+    top:0 !important;
+    z-index:-1 !important;
+    transform:translateY(-30px) !important;
+    width:100% !important;
+    height:96px !important;
+    background-image:url("../image/headerBg.png") !important;
+    transition: all 0.5s !important;
+}
 
