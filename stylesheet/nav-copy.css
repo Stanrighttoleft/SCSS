@@ -81,16 +81,25 @@ nav{
     height:96px;
     position:relative;
     background-image:url("../image/headerBg.png");
+    
     background-size: cover;
-    background-position: center;
+    
 }
 .flex-container{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    align-items: center;
-
-
+    width:100%;
+    align-items: flex-start;
+}
+.burger{
+    flex-grow:0;
+}
+.burger a{
+    display:none;
+}
+.list{
+    flex-grow:8;
 }
 
 #support{
@@ -100,7 +109,9 @@ nav{
 }
 /*adjust the position of the logo*/
 .logo{
-    margin-top: 10px;
+    margin-top: 5px;
+    flex-grow:2
+    
 
 }
 /*adjust the position of the ul*/
@@ -114,6 +125,7 @@ ul {
     padding: 0;
     margin: 0;
     margin-top:20px;
+    
 }
 /*take out the uderscore of navbar*/
 ul a{
@@ -121,10 +133,10 @@ ul a{
 }
 ul li {
     position: relative;
-    padding-left: 15px; /* Add space to prevent overlap */
+    padding-left: 6px; /* Add space to prevent overlap */
 }
 /*put short bar in front of list*/
-ul li::before {
+ul li:not(.dropdown)::before {
     content: "|"; 
     color: white; 
     font-size: 10px;
@@ -185,3 +197,45 @@ nav a{
 }
 
 
+@media (max-width:1280px){
+    li.about::before,
+    li.news::before,
+    li.safe::before,
+    li.partner::before{
+        content: ""; /* Remove the content */
+        display: none;
+        width:0;
+        height:0;
+    }
+    .about,.safe,.news,.partner{
+        display:none;
+
+    }
+    ul {
+        display:flex;     
+        justify-content: space-evenly;
+    }
+    .burger{
+        flex-grow:2;
+    }
+    .burger a{
+        display:flex;
+        height:70px;
+        
+    }
+    .menu div{
+        height:4px;
+        background-color:white;
+        margin:5px 0;
+        border-radius:25px;
+
+    }
+    .list{
+        flex-grow:7;
+    }
+    .logo{
+        margin-top: 5px;
+        flex-grow:2
+    }
+}
+ 
