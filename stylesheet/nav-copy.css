@@ -93,10 +93,10 @@ nav{
     align-items: flex-start;
 }
 .burger{
-    flex-grow:0;
+    min-width:50px;
 }
 .burger a{
-    display:none;
+    
 }
 .list{
     flex-grow:8;
@@ -223,11 +223,75 @@ nav a{
         height:70px;
         
     }
-    .menu div{
+    /*set up the burger menu icon*/
+    .box{
+        margin-top: -15px; 
+        margin-left:30px; 
+        position:relative;
+                 
+    }
+    .one {
+        
+        width: 40px;
+        height:40px;
+        border:solid 4px #ffd25b;
+        border-color:#ffd25b transparent transparent  transparent;
+        transform: translate(-14%,80%) ;
+        filter:drop-shadow(0 0 2px #3b4402);       
+        border-radius:5rem/5rem;
+        transition-duration:1s;
+
+    }
+    .box:hover .one{
+        border:solid 4px #ffd25b;
+        border-color:transparent transparent transparent  transparent;
+        transform: translate(-14%,100%) ;
+    }
+    
+    
+    .two{
         height:4px;
-        background-color:white;
+        width:30px;
+        background-color:white !important;
+        margin:6px 0;
+        border-radius:25px;
+        z-index:10;
+        filter:drop-shadow(0 0 2px #3b4402);
+        transition-duration: 1s;
+
+    }
+    .box:hover .two{
+        height:4px;
+        width:30px;
+        background-color:#ffd25b !important;
+        margin:6px 0;
+        border-radius:25px;
+        z-index:10;
+        filter:drop-shadow(0 0 2px #3b4402);
+        transform:rotate(-40deg)
+    }
+    .three{
+        height:4px;
+        width:30px;
+        background-color:#bfcf56 !important;
         margin:5px 0;
         border-radius:25px;
+        z-index:10;
+        filter:drop-shadow(0 0 2px #3b4402);
+        transition-duration: 1s;
+        
+
+    }
+    .box:hover .three{
+        height:4px;
+        width:30px;
+        background-color:white !important;
+        margin:5px 0;
+        border-radius:25px;
+        z-index:10;
+        filter:drop-shadow(0 0 2px #3b4402);
+        transform: rotate(40deg) translateY(-7px) translateX(-6px);
+       
 
     }
     .list{
